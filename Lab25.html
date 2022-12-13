@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			background-color: #73C3F0;
+		}
+		.content{
+			position:absolute;
+			left: 25%;
+			width: 50%;
+			top: 20%;
+			height: 35%;
+			background-color:#07E692;
+
+		}
+
+		.myhints{
+			background-color: #ffffff;
+			width: 150px;
+			height: 15px;
+			border-color: red;
+			border-style: solid;
+		}
+
+	</style>
+	<!--
+		Lab 25 Hint Lab
+		Charles Levos
+	-->
+	<title>Lab 25 Hint Lab</title>
+</head>
+<body><p><h2>Lab 25 Hint Lab</h2>
+	<div class="content">
+		<form id="charlesform" name="theform" class="group">
+			<legend>Login Info</legend>
+			<span id="hints" class="myhints"></span>
+			<ul>
+				<li><label for="Fname">First name:<span id="Rq">*</span></label><input type="text" id="Fname" placeholder="Charles" 
+				required/></li>
+				<li><label for="Lname">Last Name:<span id="Rq">*</span></label><input type="text" id="Lname" placeholder="Levos"
+					required></li>
+					<li><label for="myemail">Email:</label><input type="Email" id="myEmail" autocomplete="off"/></li>
+					<li><label for="myPassword">Password:<span id="Rq">*</span></label><input type="Password" id="myPassword"></li>
+			</ul>
+		</form>
+	</div>
+	<script>
+		/*Fname functions*/
+		document.theform.Fname.onfocus=function(){
+			document.getElementById('hints').innerHTML ="Please enter your First Name.";
+		}
+		document.theform.Fname.onblur=function(){
+		    document.getElementById('hints').innerHTML =""; 
+        } /*end of Fname functions*/
+        /*Start of Lname functions*/
+		document.theform.Lname.onfocus=function(){
+			document.getElementById('hints').innerHTML ="Please enter your Last Name.";
+        }
+        document.theform.Lname.onblur=function(){
+		    document.getElementById('hints').innerHTML ="";
+		}/*End of Ln*/
+		/*Start Email functions*/
+		document.theform.myEmail.onfocus=function(){
+			document.getElementById('hints').innerHTML ="Please enter your Email.";
+        }
+        document.theform.myEmail.onblur=function(){
+		    document.getElementById('hints').innerHTML ="";
+		}/*End of Email*/
+
+		/*Start Password functions*/
+		document.theform.myPassword.onfocus=function(){
+			document.getElementById('hints').innerHTML ="Please enter your password.";
+        }
+        document.theform.myPassword.onblur=function(){
+		    document.getElementById('hints').innerHTML ="";
+		}/*End of password*/
+	</script>
+
+</body>
+</html>

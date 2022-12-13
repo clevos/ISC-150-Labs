@@ -1,0 +1,44 @@
+
+body{
+	background-color: #7A40FF;
+}
+
+#myForm{
+	position: absolute;
+	background-color: #40D1FF;
+	border-style: solid;
+	left: 25%;
+	top: 30%;
+	width: 45%;
+	box-shadow: 10px 10px 5px #4C76FF;
+	padding: 10px;
+}
+
+#formData{
+	position: absolute;
+	background-color: #40D1FF;
+	border-style: solid;
+	left: 25%;
+	top: 30%;
+	width: 45%;
+	box-shadow: 10px 10px 5px #4C76FF;
+	padding: 10px;
+}
+
+#hints{
+	color: black;
+	height: 15px;
+	font-weight: bolder;
+}
+.tb{
+	position: absolute;
+	Left: 40%; 
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	margin: 5px;
+}

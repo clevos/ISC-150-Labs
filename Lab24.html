@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 24 Inputs</title>
+<h2>Lab 24 Inputs</h2>
+
+<form>
+	<label for="lname"> Last name:</label><br>
+	<input type="text" id="lname"
+	name="lname" value="Levos"><br><br>
+
+	<label for="fname">First name:</label>
+	<br>
+	<input type="text" id="fname"
+	name="fname" value="Charles"><br>
+
+	<label for="pwd">Password:</label>
+    <input type="password" id="pwd" name="pwd" minlength="8"><br><br>
+    <input type="submit">
+
+    <label for="browser">Choose your browser from the list:</label>
+    <input list="browsers" name="browser" id="browser">
+    <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+
+    <p>Please select your gender:</p>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+  <p>Please select your age:</p>
+  <input type="radio" id="age1" name="age" value="30">
+  <label for="age1">0 - 30</label><br>
+  <input type="radio" id="age2" name="age" value="60">
+  <label for="age2">31 - 60</label><br>  
+  <input type="radio" id="age3" name="age" value="100">
+  <label for="age3">61 - 100</label><br><br>
+  <input type="submit" value="Submit">
+
+  <label for="phone">Enter a phone number:</label><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+  <small>Format: 123-45-678</small><br><br>
+  <input type="submit">
+
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor" value="lightblue"><br><br>
+  <input type="submit">
+
+  <label for="vol">Volume (between 0 and 50):</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+  <input type="submit">
+</form>
+
+	<fieldset>
+        <legend>Text input</legend>
+        <p>
+          <label>Text box</label>
+          <input type = "text"
+                 id = "myText"
+                 value = "" />
+        </p>
+        <p>
+
+        </p>         
+</form>	
+</head>
+<body>
+
+</body>
+</html>

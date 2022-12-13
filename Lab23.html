@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="Lab23scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="Lab23Styles.css">
+	<title>Lab 23 Guessing Game</title>
+</head>
+<body>
+	<div id="GuessingGame">
+		 <h2 id="Q2"> Do you want to play a guessing game?</h2>
+		 <p id="yesORno">
+             <input type="button" value="yes" onclick="inputYes()">
+             <input type="button" value="no" onclick="inputNo()">
+		 </p><!-- end of yesORno -->
+		 <div id="gameBoard">
+		 <p>	
+		    Guess a number between 1 - 500<br>
+		    <input type="text" id="theGuess"><button type="button" onclick="inputGuess()">
+		    Input Guess</button>	
+		 </p>   	
+		 <p id="reply">&nbsp;</p>
+		 <p id="numbersGuessed">&nbsp;</p>
+
+
+	</div><!--End of GuessingGame" -->
+
+</body>
+</html>
